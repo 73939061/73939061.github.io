@@ -1,6 +1,0 @@
-.card {
-  box-shadow: 0px 0px 5px 0px rgba( 218, 218, 218 ,  1 );
-  box-shadow: 0px 0px 5px 0px rgba( var(--palette-neutral-10,218, 218, 218) ,  1 );
-  padding: 10px;
-  transition: box-shadow 0.2s ease-in-out;
-}
