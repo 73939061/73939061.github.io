@@ -15,13 +15,40 @@ body{
     }
  #seccion1 {
         font-size: 40px;
+        height: 250px;
         text-align: center;
         background-color: red;
+        padding-top: 100PX;
+        font-family: Arial, Helvetica, sans-serif;
+        box-shadow: 10px 4px 12px 12px rgb(71, 14, 14);
+
+       
+    
         
     }
-    .proyec{
-        width: 100px;
+   
+    .colunma{
+        box-shadow: 2px 3px 3px 2px;
     }
+    .descuento{
+        font-family: Arial, Helvetica, sans-serif;
+
+
+    }
+    .img{
+        width: 200px;
+        height: 250px;
+        border: 5px solid rgb(212, 19, 109);
+        object-fit: cover;
+        border-radius: 150px;
+        box-shadow: 10px 4px 12px black;
+        display: block;
+        margin: auto;
+        
+    }
+
+   
+    
     
 
 
