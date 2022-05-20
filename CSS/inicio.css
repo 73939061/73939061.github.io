@@ -57,6 +57,12 @@ nav ul li{
      align-items: center;
  }
 
+ h1{
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+ }
+
  nav ul li a:hover{
      color: black;
  }

@@ -1,4 +1,25 @@
-logo{
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    width: 100%;
+    background:#6ec1e4;
+    height: 70px;
+    align-items: center;
+
+}
+
+.ancho{
+    width: 80%;
+    height: 70px;
+    background: red; 
+    margin: auto;   
+}
+
+.logo{
     width: 20%;
     height: 70px;
     background: #6ec1e4;
