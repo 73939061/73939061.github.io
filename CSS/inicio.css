@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+
 header{
     width: 100%;
     background:#6ec1e4;
@@ -11,6 +12,9 @@ header{
 
 }
 
+.body{
+    background: url(../IMAGENES/logo.jpg);
+}
 .ancho{
     width: 80%;
     height: 70px;
@@ -58,4 +62,11 @@ nav ul li{
 
  nav ul li a:hover{
      color: black;
+ }
+ 
+ h1{
+     font-size: 30px;
+     font-family: 'Oswald', sans-serif;
+     text-align: center;
+
  }
