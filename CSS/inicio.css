@@ -12,8 +12,8 @@ header{
 
 }
 
-.body{
-    background: url(../IMAGENES/logo.jpg);
+body{
+    background-color: url(../IMAGENES/logo.jpg);
 }
 .ancho{
     width: 80%;
@@ -63,7 +63,47 @@ nav ul li{
  nav ul li a:hover{
      color: black;
  }
+
+.proplan img{
+    width: 300;
+    margin: auto;
+    position: relative;
+    left: 200px;
+ }
  
+ .cambo img{
+    width: 300;
+    position: relative;
+    left: 800px;
+    top: 200px;
+    margin: auto;
+    display: block;
+ }
+
+ .hills img{
+    width: 300;
+    position: relative;
+    left: 1200px;
+    top: 200px;
+ }
+
+ .hills2 img{
+    width: 300;
+    position: relative;
+    left: 200px;
+ }
+
+ .baker img{
+    width: 300;
+    position: relative;
+    left: 800px;
+ }
+
+ .equilibrio img{
+    width: 300;
+    position: relative;
+    left: 1200px;
+ }
  h1{
      font-size: 30px;
      font-family: 'Oswald', sans-serif;
