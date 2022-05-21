@@ -4,7 +4,7 @@
 }
 
 body{
-    background: #6ec;
+    background: url(../IMAGENES/presentacion\ xd.webp);
 }
 
 header{
@@ -79,7 +79,7 @@ nav ul li{
     flex-wrap: nowrap;
     margin: auto; 
     } 
-    ul li img{
+    ul  img{
         width: 300px;
         height: 300px;
         margin-bottom: 30px;
