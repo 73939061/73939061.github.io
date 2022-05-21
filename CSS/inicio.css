@@ -4,7 +4,11 @@
 }
 
 body{
-    background: url(../IMAGENES/presentacion\ xd.webp);
+    background-image: url(../IMAGENES/caratula.jpg);
+    background-repeat: no-repeat;
+    /* background-position: 200px 200px ; */
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 header{
