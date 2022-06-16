@@ -1,0 +1,262 @@
+
+section{
+    position:relative;
+    min-height: 60.1vh;
+    height: 1500px;
+    width: 1325px;
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: flex-start;
+    background: url(../IMAGENES/blogimg/bg.jpg) no-repeat;
+    background-size:cover;
+    background-position: center;
+    margin: 10px;
+    
+  }
+  
+ .banner1{  
+  width: 1325px;
+  height: 75px;
+  background: url(../IMAGENES/blogimg/banner1.jpg);
+  justify-content: flex-start;
+  background-position: center;
+ }
+ 
+ /* Esto es el menú que está arriba */
+ 
+  .menu{
+    list-style: none;
+    padding: 0;
+    background: rgb(156, 8, 8);
+    width:100%;
+    margin: auto;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    margin-left: 200px;
+    margin: center;
+    display: block;
+    text-align: center;
+    text-indent: center;
+}
+
+.menu li{
+    display: inline-block;
+    text-align:justify;
+}
+
+.menu li a:hover{
+    background: rgba(23, 14, 143, 0.938);
+
+}
+
+.info{
+  text-shadow: -2px 2px #111;
+}
+
+.vista{
+    color: white;
+    font-size: 30px;
+    text-shadow: #111;
+}
+
+
+/* Estas son las imágenes y el texto */
+
+.content{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  max-width: 550px;
+  margin-left: 400px; 
+  margin-top: 130px;
+  margin-bottom: 200px;
+  }
+  
+  .content h2{
+    background-color: rgb(26, 55, 134);
+    border-radius: 30px;
+    padding: 10px;
+    color: white;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 50px;
+    margin-bottom: 30px;
+  }
+
+
+ /*estas son las cajas */
+ 
+
+.bigbox{
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+
+
+ .box1 {
+  
+  margin:10px;
+  width: 400px;
+  height: 600px;
+  border: 1px solid black;
+  background-color:rgb(26, 55, 134);
+  border-radius: 10px;
+  
+  }
+
+.dogbox1 {
+  display: flex;
+  position: relative;
+  width: 200px;
+  float: left;
+  margin-left: 100px;
+  margin-top: 70px;
+  border: 1px solid #111;
+  transition: transform 0.3s ease;
+  }
+
+.dogbox1:not(:last-child){
+  margin-right: 60px;
+}
+
+.dogbox1:hover{
+  transform: scale(1.1);
+}
+
+.titulo1{
+  color: aliceblue;
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 25px;
+  padding: 10px;
+  margin-bottom: 0px;
+ }
+.texto1{
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align:center;
+  margin-top: -50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: aliceblue;
+
+}
+
+
+
+
+ 
+.box2 {
+  margin:10px;
+  width: 400px;
+  height: 600px;
+  border: 1px solid black;
+  background-color:rgb(156, 8, 8);
+  border-radius: 10px;
+  
+  }
+
+.dogbox2 {
+  display: flex;
+  position: relative;
+  width: 200px;
+  float: left;
+  margin-left: 100px;
+  margin-top: 70px;
+  border: 1px solid #111;
+  transition: transform 0.3s ease;
+  }
+
+.dogbox2:not(:last-child){
+  margin-right: 60px;
+}
+
+.dogbox2:hover{
+  transform: scale(1.1);
+}
+
+.titulo2{
+  color: aliceblue;
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 25px;
+  padding: 10px;
+  margin-bottom: 0px;
+ }
+
+ .texto2{
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align:center;
+  margin-top: -50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: aliceblue;
+
+}
+
+
+
+.box3 {
+  margin:10px;
+  width: 400px;
+  height: 600px;
+  border: 1px solid black;
+  background-color:rgb(26, 55, 134);
+  border-radius: 10px;
+}
+
+.dogbox3 {
+  display: flex;
+  position: relative;
+  width: 200px;
+  float: left;
+  margin-left: 100px;
+  margin-top: 70px;
+  border: 1px solid #111;
+  transition: transform 0.3s ease;
+}
+
+.dogbox3:not(:last-child){
+  margin-right: 60px;
+}
+
+.dogbox3:hover{
+  transform: scale(1.1);
+}
+
+.titulo3{
+  color: aliceblue;
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 25px;
+  padding: 10px;
+  margin-bottom: 0px;
+ }
+
+ .texto3{
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align:center;
+  margin-top: -50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: aliceblue;
+
+}
+
+
+
+
+  
+
+  
