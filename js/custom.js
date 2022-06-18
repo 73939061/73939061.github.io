@@ -8,6 +8,8 @@ let amountProduct = document.querySelector('.count-product');
 let buyThings = [];
 let totalCard = 0;
 let countProduct = 0;
+let cargardatos =[]
+
 
 
 //functions
@@ -47,7 +49,7 @@ function deleteProduct(e) {
 
 
 function readTheContent(product){
-    const infoProduct = {
+    var infoProduct = {
         image: product.querySelector('div img').src,
         title: product.querySelector('.title').textContent,
         price: product.querySelector('div p span').textContent,
@@ -73,6 +75,8 @@ function readTheContent(product){
         buyThings = [...buyThings, infoProduct]
         countProduct++;
     }
+    cargardatos.push(infoProduct)
+    localStorage.setItem('compraProducto',JSON.stringify(cargardatos))
     loadHtml();
     //console.log(infoProduct);
 }
@@ -104,3 +108,6 @@ function loadHtml(){
     containerBuyCart.innerHTML = '';
  }
 
+function comprar(){
+    window.open("../CONTACTENOS/COMPRAS.HTML")
+}

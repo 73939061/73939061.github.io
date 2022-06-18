@@ -52,7 +52,7 @@
                                 <input type="email" class="form-control" id="correo" placeholder="Ingresa tu correo" required>
                             </div>
                         </div>
-
+                        
                         <div id="carrito" class="table-responsive">
                             <table class="table" id="lista-compra">
                                 <thead>
@@ -66,7 +66,7 @@
                                     </tr>
 
                                 </thead>
-                                <tbody>
+                                <tbody id="bodyCompras">
 
                                 </tbody>
                                 <tr>
@@ -74,6 +74,7 @@
                                     <th scope="col">
                                         <p id="subtotal"></p>
                                     </th>
+                                
                                     <!-- <th scope="col"></th> -->
                                 </tr>
                                 <tr>
@@ -126,7 +127,10 @@
     <script src="../js/jquery-3.4.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/sweetalert2.min.js"></script>
-
+    <script src="./compras.js"> </script>
+    <script>
+        inicio()
+    </script>
 
 </body>
 
