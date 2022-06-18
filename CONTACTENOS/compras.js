@@ -19,5 +19,6 @@ function inicio(){
 }
 
 function ClearProdut(id){
-    var dat
+    data.splice(0,id)
+    console
 }
