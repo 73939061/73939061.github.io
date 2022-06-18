@@ -12,13 +12,13 @@ function inicio(){
             <td>${element.price}</td>
             <td>${element.amount}</td>
             <td>${element.price}</td>
-            <td><samp class="btn btn-primary" onclick="ClearProdut(${element.id})"></samp></td>
+            <td><samp class="btn btn-primary" onclick="ClearProdut(${element.id})">Eliminar</samp></td>
         `
         bodyData.append(data)
     });
 }
 
 function ClearProdut(id){
-    data.splice(0,id)
-    console
+    //data.splice(0,id)
+    //console
 }
