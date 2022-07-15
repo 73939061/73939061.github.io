@@ -6,7 +6,7 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="../CSS/bootstrap.min.css">
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="../CSS/contactenos.css">
     <script src="../js/popper.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     
@@ -17,6 +17,7 @@
 </head>
 
 <body>
+   
     <header>
         <div class="container">
             <div class="row justify-content-between mb-5">
@@ -31,31 +32,54 @@
         </div>
     </header>
 
+    <nav>         
+        <ul class="navProductos">
+           <li ><a class="text-white" href="../index.html">INICIO</a></li>
+           <li><a class="text-white" href="../PRODUCTOS/productos.html">PRODUCTOS</a></li>
+           <li><a class="text-white" href="../TIENDAS FISICAS/tienda fisica.html">TIENDAS FISICAS</a></li>
+           <li><a class="text-white" href="../SERVICIO/servicio.html">SERVICIOS</a></li>
+           <li><a class="text-white" href="../CONTACTENOS/contactenos.HTML">CONTACTOS</a></li>
+           <li ><a class="text-white" href="../PROMOCIÓN/promocion.html">PROMOCIONES</a></li>
+           <li ><a class="text-white" href="../BLOG/blog.html">BLOG</a></li>
+        </ul>
+    </nav>
+
     <br>
 
     <main>
-        <div class="container">
+        <div class="container text-white">
             <div class="row mt-3">
                 <div class="col">
                     <h2 class="d-flex justify-content-center mb-3">Contactenos Para Realizar compras</h2>
+
                     <form id="procesar-pago" action="#">
+
                         <div class="form-group row">
                             <label for="cliente" class="col-12 col-md-2 col-form-label h2">Cliente :</label>
                             <div class="col-12 col-md-10">
-                                <input type="text" class="form-control" id="cliente"
-                                    placeholder="Ingresa nombre cliente" required>
+                                <input type="text" class="form-control" id="cliente" placeholder="Ingresa nombre cliente">
                             </div>
                         </div>
+
                         <div class="form-group row">
                             <label for="email" class="col-12 col-md-2 col-form-label h2">Correo :</label>
                             <div class="col-12 col-md-10">
-                                <input type="email" class="form-control" id="correo" placeholder="Ingresa tu correo" required>
+                                <input type="text" class="form-control" id="correo" placeholder="Ingresa tu correo">
                             </div>
                         </div>
-                        
-                        <div id="carrito" class="table-responsive">
+                    
+                        <div class="col-xs-12 col-md-4 my-2 mx-auto">
+                            <p id="fieldsParagraph" class="d-none text-center text-danger font-weight-bold">Todos los campos son obligatorios</p>
+                            <p id="emailParagraph" class="d-none text-center text-danger font-weight-bold">Email no válido</p>
+                            <p id="confirmParagraph" class="d-none text-center text-success font-weight-bold">Registro enviado con éxito</p>
+                            <button id="btnSend" type="submit" class="btn btn-primary btn-block font-weight-bold">ENVIAR</button>
+                        </div>
+
+                    </form>
+             
+                        <div id="carrito" class="table-responsive mt-5">
                             <table class="table" id="lista-compra">
-                                <thead>
+                                <thead class="text-white">
                                     <tr>
                                         <th scope="col">Imagen</th>
                                         <th scope="col">Nombre</th>
@@ -70,7 +94,7 @@
 
                                 </tbody>
                                 <tr>
-                                    <th colspan="4" scope="col" class="text-right">SUB TOTAL :</th>
+                                    <th colspan="4" scope="col" class="text-right text-white">SUB TOTAL :</th>
                                     <th scope="col">
                                         <p id="subtotal"></p>
                                     </th>
@@ -78,27 +102,24 @@
                                     <!-- <th scope="col"></th> -->
                                 </tr>
                                 <tr>
-                                    <th colspan="4" scope="col" class="text-right">IGV :</th>
+                                    <th colspan="4" scope="col" class="text-right text-white">IGV :</th>
                                     <th scope="col">
                                         <p id="igv"></p>
                                     </th>
                                     <!-- <th scope="col"></th> -->
                                 </tr>
                                 <tr>
-                                    <th colspan="4" scope="col" class="text-right">TOTAL :</th>
+                                    <th colspan="4" scope="col" class="text-right text-white">TOTAL :</th>
                                     <th scope="col">
                                         <p id="total"></p>
                                     </th>
                                     <!-- <th scope="col"></th> -->
                                 </tr>
-
                             </table>
                         </div>
-
                         <div class="row justify-content-center" id="loaders">
                             <img id="cargando" src="" width="220">
                         </div>
-
                         <div class="row justify-content-between">
                             <div class="col-md-4 mb-2">
                                 <a href="index.html" class="btn btn-info btn-block">Seguir comprando</a>
@@ -107,31 +128,17 @@
                                 <a href="" class="btn btn-success btn-block" id="procesar-compra">Realizar compra</a>
                             </div>
                         </div>
-                    </form>
-
-
                 </div>
-
-
             </div>
-
         </div>
     </main>
-
-
-
-
-
-    </div>
-
+    </div>  
     <script src="../js/jquery-3.4.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/sweetalert2.min.js"></script>
-    <script src="./compras.js"> </script>
+    <script src="./compras.js" type="module"> </script>
     <script>
         inicio()
     </script>
-
 </body>
-
 </html>

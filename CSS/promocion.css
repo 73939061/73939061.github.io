@@ -3,6 +3,18 @@ body{
         background-color: rgb(204, 204, 243);
         
     }
+.navProductos {
+    position: relative;
+    top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.navProductos li a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
 .imagen{
         width: 20%;
         
@@ -32,7 +44,7 @@ body{
     }
     .descuento{
         font-family: Arial, Helvetica, sans-serif;
-
+        margin: 4rem;
 
     }
     .img{

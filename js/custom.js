@@ -3,7 +3,11 @@ let allContainerCart = document.querySelector('.products');
 let containerBuyCart = document.querySelector('.card-items');
 let priceTotal = document.querySelector('.price-total')
 let amountProduct = document.querySelector('.count-product');
+const pedido = document.querySelector('#realizar-pedido');
 
+pedido.addEventListener('click',() => {
+    location.href = '../CONTACTENOS/contactenos.HTML'
+});
 
 let buyThings = [];
 let totalCard = 0;
@@ -107,7 +111,3 @@ function loadHtml(){
  function clearHtml(){
     containerBuyCart.innerHTML = '';
  }
-
-function comprar(){
-    window.open("../CONTACTENOS/COMPRAS.HTML")
-}

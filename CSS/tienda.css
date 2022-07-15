@@ -21,5 +21,13 @@ height: 250px;
      width: 400px;
      height: 300px;
 }
-.XD {
+.navProductos {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.navProductos li a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
 }

@@ -25,6 +25,16 @@ ul {
 
 /* Pagina Servicios */
 
+.navProductos {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.navProductos li a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
 .title2 {
     text-align: center;
     font-family: 'Roboto', sans-serif;

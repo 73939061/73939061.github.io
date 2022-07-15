@@ -1,3 +1,41 @@
+//Importaciones
+import { saveRecord } from "./firebase.js";
+
+//Variables y selectores
+export const clientForm = document.querySelector('#procesar-pago');
+const fieldsParagraph = document.querySelector('#fieldsParagraph');
+const emailParagraph = document.querySelector('#emailParagraph');
+const er = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+//Eventos
+clientForm.addEventListener('submit', sendForm);
+
+//Funciones
+function sendForm(e) {
+    e.preventDefault();
+    const clientName = document.querySelector('#cliente').value;
+    const clientEmail = document.querySelector('#correo').value;
+    if( clientName === "" || clientEmail === ""  ) {
+        fieldsParagraph.classList.remove('d-none');
+        setTimeout(() => {
+            fieldsParagraph.classList.add('d-none');
+        }, 1500);
+        return;
+    }    
+    if(clientEmail) {
+        if( er.test(clientEmail) === false ) {
+            emailParagraph.classList.remove('d-none');
+            setTimeout(() => {
+                emailParagraph.classList.add('d-none');
+            }, 1500);
+            return;
+        } 
+    }
+    saveRecord(clientName, clientEmail);
+}
+
+
+
 var data =[]
 const bodyData= document.getElementById("bodyCompras")
 function inicio(){
